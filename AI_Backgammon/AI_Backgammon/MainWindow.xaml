@@ -1,0 +1,20 @@
+﻿<Window x:Class="AI_Backgammon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="980.09" Width="1323.687" ResizeMode="NoResize" WindowStyle="None" Background="#FFC5823E">
+    <DockPanel Margin="2">
+        <Grid Height="34" VerticalAlignment="Top" DockPanel.Dock="Top" Background="#FFC5823E">
+            <Image Source="Image/CloseUnSelect.png" Margin="0,2,2,2" HorizontalAlignment="Right"/>
+            <Image Source="Image/CollapseUnSelect.png" Margin="0,2,34,2" HorizontalAlignment="Right"/>
+            <StackPanel HorizontalAlignment="Left" Margin="2,0,0,0" Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Margin="0,2" Source="Image/Black.png"/>
+                <Label Content="Нарды" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="18" FontFamily="Comic Sans MS"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Height="50" DockPanel.Dock="Top" Background="#FF432F17"/>
+        <StackPanel Width="214" HorizontalAlignment="Left" Background="#FFB9873F"/>
+        <Grid Width="1110" Background="#FF432F17">
+            <Image Source="Image/Np2.png"/>
+        </Grid>
+    </DockPanel>
+</Window>
