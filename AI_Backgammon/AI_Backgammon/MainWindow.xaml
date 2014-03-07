@@ -1,6 +1,7 @@
-﻿<Window x:Class="AI_Backgammon.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AI_Backgammon.MainWindow"
         Title="MainWindow" Height="980.09" Width="1323.687" ResizeMode="NoResize" WindowStyle="None" Background="#FFC5823E">
     <DockPanel Margin="2">
         <Grid Height="34" VerticalAlignment="Top" DockPanel.Dock="Top" Background="#FFC5823E">
@@ -13,8 +14,98 @@
         </Grid>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Height="50" DockPanel.Dock="Top" Background="#FF432F17"/>
         <StackPanel Width="214" HorizontalAlignment="Left" Background="#FFB9873F"/>
-        <Grid Width="1110" Background="#FF432F17">
-            <Image Source="Image/Np2.png"/>
-        </Grid>
+        <Canvas x:Name="GridField" Background="#FF432F17" Width="1110">
+            <Image Source="Image/Np2.png" Height="892" Width="1110"/>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="451" Canvas.Top="780">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="48">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="109">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="170">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="231">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="292">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="353">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="414">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="475">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="536">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="597">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="658">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="135" Canvas.Top="719">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top" d:IsHidden="True" Canvas.Left="135" Canvas.Top="780">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="387" Canvas.Top="778">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="323" Canvas.Top="778">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="259" Canvas.Top="778">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" d:IsHidden="True" Canvas.Left="195" Canvas.Top="778">
+                <Border.Background>
+                    <ImageBrush ImageSource="Image/White.png"/>
+                </Border.Background>
+            </Border>
+        </Canvas>
     </DockPanel>
 </Window>

@@ -23,6 +23,23 @@ namespace AI_Backgammon
         public MainWindow()
         {
             InitializeComponent();
+            DelimitFieldView();
+        }
+
+        private void DelimitFieldView()
+        {
+            NodeView nvTmp;
+            Point startPositionNode = new Point(135,780);
+           
+            for (int i = 0; i < 6; ++i)
+            {
+                for (int j = 0; j < 12; ++j)
+                {
+                    nvTmp = new NodeView();
+                   // nvTmp.Margin = new Thickness(startPositionNode.X + i * 64, startPositionNode.Y - j * 61, 0, 0);
+                    GridField.Children.Add(nvTmp);
+                }
+            }
         }
     }
 }
